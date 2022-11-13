@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #efefef;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "viaje1 section"
+    "viaje2 section"
+    "viaje3 section"
+    "footer section";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+    overflow-y: scroll;
+}
+
+section{
+    margin: 0 2rem;
+}
+
+.miFoto_bordes{
+    border-radius: 50%;
+}
+
+body p{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-style: oblique;
+    width: 90%;
+}
+
+body h2{
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    padding: 1rem;
+    color: rgb(69, 69, 133);
+}
+
+header{
+    grid-area: header;
+    height: 130px;
+    background-color: rgb(69, 69, 133);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+header h1{
+    font-family: 'Qwitcher Grypen', cursive;
+    color: white;
+}
+
+.sobreMi{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-left-style: groove;
+}
+
+.viaje1{
+    grid-area: viaje1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.viaje2{
+    grid-area: viaje2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.viaje3{
+    grid-area: viaje3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.section__box-shadow:hover{
+    box-shadow: 1px 1px 5px grey;
+}
+
+footer{
+    height: 4rem;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+footer a:hover{
+    color: red;
+}
